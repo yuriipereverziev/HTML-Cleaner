@@ -1,0 +1,23 @@
+.container
+  h1 HTML Cleaner &amp; Style Extractor
+  textarea#inputHTML(required, placeholder="Вставьте ваш HTML здесь...")
+  button(onclick="processHTML()") Обработать HTML
+  .checkbox-group
+    div
+      h3 Основные параметры
+      label.checkbox-item
+        input#cleanHTML(type="checkbox", checked)
+        | Очистить HTML и извлечь стили
+      label.checkbox-item
+        input#replaceCenterTags(type="checkbox")
+        | Заменить тег center на div class=&quot;content-center&quot;
+  #cleanedHTMLContainer.output-container
+    h2 Очищенный HTML
+    button.copy-btn(onclick="copyToClipboard('cleanedHTML')") Копировать
+    pre#cleanedHTML
+  #extractedStylesContainer.output-container
+    h2 Извлеченные стили
+    button.copy-btn(onclick="copyToClipboard('extractedStyles')") Копировать
+    pre#extractedStyles
+.footer
+  | Создано с ❤️ для упрощения работы с HTML

@@ -1,0 +1,292 @@
+html {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7fc;
+  color: #333;
+  line-height: 1.6;
+}
+
+
+//body {
+//  font-family: $main-font;
+//  font-size: 16px;
+//  line-height: 1.3;
+//  color: $main-color;
+//  background: #fff;
+//
+//  @include rm(768){
+//    font-size: 18px;
+//  }
+//}
+//
+//body.hidden {
+//  overflow-y: hidden;
+//}
+//
+//picture {
+//  display: block;
+//}
+//
+//label {
+//  display: block;
+//}
+//
+//img {
+//  display: block;
+//  max-width: 100%;
+//  height: auto;
+//}
+//
+//svg {
+//  overflow: hidden;
+//}
+//
+//input:-moz-submit-invalid {
+//  box-shadow: none;
+//}
+//
+//input:-moz-ui-invalid {
+//  box-shadow: none;
+//}
+//
+//button {
+//  display: block;
+//  padding: 0;
+//  overflow: visible;
+//  cursor: pointer;
+//}
+//
+//.container {
+//  width: 100%;
+//  padding: 0 15px;
+//  position: relative;
+//
+//  @include rm(440) {
+//    // padding: 0 25px;
+//  }
+//
+//  @include rm(480) {
+//    width: 480px;
+//    margin: 0 auto;
+//  }
+//
+//  @include rm(640) {
+//    width: 640px;
+//  }
+//
+//  @include rm(768) {
+//    width: 768px;
+//  }
+//
+//  @include rm(1024) {
+//    width: 1024px;
+//    padding: 0px 35px;
+//  }
+//
+//  @include rm(1220) {
+//    width: 1220px;
+//    //padding: 0px 25px;
+//  }
+//}
+//
+//.title {
+//  text-align: center;
+//  margin-bottom: 20px;
+//  font-size: 20px;
+//  font-weight: 700;
+//  line-height: 1.2;
+//
+//
+//  @include rm(375) {
+//    font-size: 28px;
+//  }
+//
+//  @include rm(480) {
+//    font-size: 32px;
+//  }
+//
+//  @include rm(640) {
+//
+//    font-size: 34px;
+//  }
+//
+//  @include rm(768) {
+//    margin-bottom: 25px;
+//    font-size: 36px;
+//  }
+//
+//  @include rm(1024) {
+//    font-size: 40px;
+//  }
+//
+//  @include rm(1220) {
+//    margin-bottom: 30px;
+//  }
+//}
+//
+//
+//.subtitle {
+//  text-transform: uppercase;
+//  font-size: 16px;
+//  margin-bottom: 20px;
+//  text-align: center;
+//
+//  @include rm(440){
+//    font-size: 18px;
+//  }
+//
+//  @include rm(1024){
+//    font-size: 20px;
+//    margin-bottom: 30px;
+//
+//  }
+//  @include rm(1220){
+//    margin-bottom: 40px;
+//
+//  }
+//}
+//
+//.fw300 {
+//  font-weight: 300;
+//}
+//
+//.fw400 {
+//  font-weight: 400;
+//}
+//
+//.fw500 {
+//  font-weight: 500;
+//}
+//
+//.fw700,
+//b,
+//strong {
+//  font-weight: 700;
+//}
+//
+//.nowrap {
+//  white-space: nowrap;
+//}
+//
+//.accent-red {
+//  color: $red-color;
+//}
+//
+//.btn {
+//  width: 100%;
+//  padding: 15px;
+//  display: block;
+//  color: $main-color;
+//  font-weight: 700;
+//  font-size: 18px;
+//  line-height: 1;
+//  text-align: center;
+//  font-family:$main-font;
+//  border-radius: 50px;
+//  background-color: $orange-color;
+//  position: relative;
+//  overflow: hidden;
+//  cursor: pointer;
+//
+//  -webkit-transition: .5s;
+//  transition: .5s;
+//  -webkit-animation: blink 1s linear infinite;
+//  animation: blink 1s linear infinite;
+//
+//  &:hover {
+//    background-color: rgba(232, 146, 15, 0.9);
+//    box-shadow: 5px 5px 10px rgba(255, 94, 94, 0.4);
+//    animation: none;
+//  }
+//
+//  @include rm(440) {
+//    font-size: 20px;
+//  }
+//
+//  //@include rm(1420) {
+//  //  padding: 20px 30px;
+//  //  background-size: 20px;
+//  //}
+//}
+//
+//@keyframes blink {
+//  0%, to {
+//    background-color: $orange-color;
+//  }
+//  50% {
+//    background-color: #c58933
+//  }
+//}
+//
+//
+//@include rm(1024) {
+//  .fadeIn {
+//    opacity: 0;
+//    transition-property: opacity;
+//    transition-duration: 1s;
+//  }
+//
+//  .fade-top {
+//    opacity: 0;
+//    transform: translateY(-20px);
+//    transition-property: opacity, transform;
+//    transition-duration: 0.5s;
+//  }
+//
+//  .fade-left {
+//    opacity: 0;
+//    transform: translateX(-100px);
+//    transition-property: opacity, transform;
+//    transition-duration: 0.5s;
+//  }
+//
+//  .fade-right {
+//    opacity: 0;
+//    transform: translateX(100px);
+//    transition-property: opacity, transform;
+//    transition-duration: 0.5s;
+//  }
+//
+//  .fade-down {
+//    opacity: 0;
+//    transform: translateY(20px);
+//    transition-property: opacity, transform;
+//    transition-duration: 0.5s;
+//  }
+//
+//  .animated {
+//    &.fadeIn {
+//      opacity: 1;
+//    }
+//
+//    .fadeIn {
+//      opacity: 1;
+//    }
+//
+//    .fade-top {
+//      opacity: 1;
+//      transform: none;
+//    }
+//
+//    .fade-left {
+//      opacity: 1;
+//      transform: none;
+//    }
+//
+//    .fade-right {
+//      opacity: 1;
+//      transform: none;
+//    }
+//
+//    .fade-down {
+//      opacity: 1;
+//      transform: none;
+//    }
+//  }
+//}
+//
