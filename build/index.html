@@ -13,17 +13,17 @@
 
 <body class="ev-date">
   <div class="container">
-    <h1>HTML Cleaner &amp; Style Extractor</h1><textarea id="inputHTML" required placeholder="Вставьте ваш HTML здесь..."></textarea><button onclick="processHTML()">Обработать HTML</button>
+    <h1>HTML Cleaner &amp; Style Extractor</h1><textarea id="inputHTML" required placeholder="Вставьте ваш HTML здесь..."></textarea><button id="processButton">Обработать HTML</button>
     <div class="checkbox-group">
       <div>
         <h3>Основные параметры</h3><label class="checkbox-item"><input id="cleanHTML" type="checkbox" checked>Очистить HTML и извлечь стили</label><label class="checkbox-item"><input id="replaceCenterTags" type="checkbox">Заменить тег center на div class=&quot;content-center&quot;</label>
       </div>
     </div>
     <div class="output-container" id="cleanedHTMLContainer">
-      <h2>Очищенный HTML</h2><button class="copy-btn" onclick="copyToClipboard('cleanedHTML')">Копировать</button><pre id="cleanedHTML"></pre>
+      <h2>Очищенный HTML</h2><button class="copy-btn" data-copy-target="cleanedHTML">Копировать</button><pre id="cleanedHTML"></pre>
     </div>
     <div class="output-container" id="extractedStylesContainer">
-      <h2>Извлеченные стили</h2><button class="copy-btn" onclick="copyToClipboard('extractedStyles')">Копировать</button><pre id="extractedStyles"></pre>
+      <h2>Извлеченные стили</h2><button class="copy-btn" data-copy-target="extractedStyles">Копировать</button><pre id="extractedStyles"></pre>
     </div>
   </div>
   <div class="footer">Создано с ❤️ для упрощения работы с HTML</div>

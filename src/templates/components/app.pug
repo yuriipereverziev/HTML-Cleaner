@@ -1,7 +1,7 @@
 .container
   h1 HTML Cleaner &amp; Style Extractor
   textarea#inputHTML(required, placeholder="Вставьте ваш HTML здесь...")
-  button(onclick="processHTML()") Обработать HTML
+  button#processButton Обработать HTML
   .checkbox-group
     div
       h3 Основные параметры
@@ -13,11 +13,11 @@
         | Заменить тег center на div class=&quot;content-center&quot;
   #cleanedHTMLContainer.output-container
     h2 Очищенный HTML
-    button.copy-btn(onclick="copyToClipboard('cleanedHTML')") Копировать
+    button.copy-btn(data-copy-target="cleanedHTML") Копировать
     pre#cleanedHTML
   #extractedStylesContainer.output-container
     h2 Извлеченные стили
-    button.copy-btn(onclick="copyToClipboard('extractedStyles')") Копировать
+    button.copy-btn(data-copy-target="extractedStyles") Копировать
     pre#extractedStyles
 .footer
   | Создано с ❤️ для упрощения работы с HTML
