@@ -131,3 +131,11 @@ h2 {
 //  float: right;
 //  margin-bottom: 10px;
 //}
+
+
+.button-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+}

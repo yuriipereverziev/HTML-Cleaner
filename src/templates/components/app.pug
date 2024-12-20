@@ -20,8 +20,9 @@
   section.content
     h1 HTML Cleaner & Style Extractor
     textarea#inputHTML(required placeholder='Вставьте ваш код здесь...')
-    button#processButton Обработать
-    button#clearButton Очистить
+    .button-wrapper
+      button#processButton Обработать
+      button#clearButton Очистить
     #cleanedHTMLContainer.output-container
       h2 Очищенный HTML
       pre#cleanedHTML

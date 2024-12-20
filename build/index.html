@@ -17,7 +17,8 @@
       <h3>Основные параметры</h3><label class="checkbox-item"><input id="omitBodyTag" type="checkbox" checked> Не публиковать body в результате</label><label class="checkbox-item"><input id="cleanHTML" type="checkbox"> Очистить HTML и извлечь стили</label><label class="checkbox-item"><input id="replaceCenterTags" type="checkbox"> Заменить тег center на div.content-center"</label><label class="checkbox-item"><input id="removeEmptyTags" type="checkbox"> Удалить пустые теги</label><label class="checkbox-item"><input id="groupStyles" type="checkbox"> Группировать CSS-стили с одинаковыми правилами</label>
     </aside>
     <section class="content">
-      <h1>HTML Cleaner & Style Extractor</h1><textarea id="inputHTML" required placeholder="Вставьте ваш код здесь..."></textarea><button id="processButton">Обработать</button><button id="clearButton">Очистить</button>
+      <h1>HTML Cleaner & Style Extractor</h1><textarea id="inputHTML" required placeholder="Вставьте ваш код здесь..."></textarea>
+      <div class="button-wrapper"><button id="processButton">Обработать</button><button id="clearButton">Очистить</button></div>
       <div class="output-container" id="cleanedHTMLContainer">
         <h2>Очищенный HTML</h2><pre id="cleanedHTML"></pre><button class="copy-btn" data-copy-target="cleanedHTML">Копировать</button>
       </div>
