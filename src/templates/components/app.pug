@@ -1,23 +1,32 @@
-.container
-  h1 HTML Cleaner &amp; Style Extractor
-  textarea#inputHTML(required, placeholder="Вставьте ваш HTML здесь...")
-  button#processButton Обработать HTML
-  .checkbox-group
-    div
-      h3 Основные параметры
-      label.checkbox-item
-        input#cleanHTML(type="checkbox", checked)
-        | Очистить HTML и извлечь стили
-      label.checkbox-item
-        input#replaceCenterTags(type="checkbox")
-        | Заменить тег center на div class=&quot;content-center&quot;
-  #cleanedHTMLContainer.output-container
-    h2 Очищенный HTML
-    button.copy-btn(data-copy-target="cleanedHTML") Копировать
-    pre#cleanedHTML
-  #extractedStylesContainer.output-container
-    h2 Извлеченные стили
-    button.copy-btn(data-copy-target="extractedStyles") Копировать
-    pre#extractedStyles
-.footer
-  | Создано с ❤️ для упрощения работы с HTML
+.main-container
+  aside.sidebar
+    h3 Основные параметры
+    label.checkbox-item
+      input#omitBodyTag(type='checkbox', checked)
+      |       Не публиковать body в результате
+    label.checkbox-item
+      input#cleanHTML(type='checkbox')
+      |       Очистить HTML и извлечь стили
+    label.checkbox-item
+      input#replaceCenterTags(type='checkbox')
+      |       Заменить тег center на div.content-center"
+    label.checkbox-item
+      input#removeEmptyTags(type='checkbox')
+      |       Удалить пустые теги
+    label.checkbox-item
+      input#groupStyles(type='checkbox')
+      |       Группировать CSS-стили с одинаковыми правилами
+
+  section.content
+    h1 HTML Cleaner & Style Extractor
+    textarea#inputHTML(required placeholder='Вставьте ваш код здесь...')
+    button#processButton Обработать
+    button#clearButton Очистить
+    #cleanedHTMLContainer.output-container
+      h2 Очищенный HTML
+      pre#cleanedHTML
+      button.copy-btn(data-copy-target='cleanedHTML') Копировать
+    #extractedStylesContainer.output-container
+      h2 Извлечённые стили
+      pre#extractedStyles
+      button.copy-btn(data-copy-target='extractedStyles') Копировать
